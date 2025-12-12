@@ -19,7 +19,10 @@
 #
 ---
 include:
-  - board: hakea_left
+  - board: hakea
+    shield: hakea_dongle
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
+  - board: hakea_left
+    cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
   - board: hakea_right
