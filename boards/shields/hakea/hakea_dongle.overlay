@@ -1,7 +1,7 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #import "hakea-layouts.dtsi"
 
-&physical_layout0 {
+&default_layout {
     transform = <&default_transform>;
 };
 
