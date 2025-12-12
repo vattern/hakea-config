@@ -76,6 +76,21 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5) RC(4,5) RC(4,6) RC(3,6) RC(3,7) 
   		output-ohms = <2000000>;
   		full-ohms = <(2000000 + 806000)>;
   	};
+
+  	left_encoder: encoder_left {
+            compatible = "alps,ec11";
+            label = "LEFT_ENCODER";
+            a-gpios = <&gpio0 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+            b-gpios = <&gpio0 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+            steps = <60>;
+            status = "disabled";
+        };
+
+        sensors {
+                    compatible = "zmk,keymap-sensors";
+                    sensors = <&left_encoder>;
+                    triggers-per-rotation = <30>;
+            };
 };
 
 &usbd {
