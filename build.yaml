@@ -20,4 +20,6 @@
 ---
 include:
   - board: hakea_left
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
   - board: hakea_right
