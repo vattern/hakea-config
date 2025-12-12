@@ -21,4 +21,3 @@
 include:
   - board: hakea_left
   - board: hakea_right
-    shield: settings_reset
