@@ -68,19 +68,7 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5) RC(4,5) RC(4,6) RC(3,6) RC(3,7) 
         blue_led: led_0 {
             gpios = <&gpio0 0 GPIO_ACTIVE_HIGH>;
         };
-    };
-
-    // If you are powering the SoC from the VDDH pin, uncomment this block.
-    // Otherwise, delete it.
-
-    // vbatt: vbatt {
-    //     compatible = "zmk,battery-nrf-vddh";
-    // };
-
-    // If you are powering the SoC from the VDD pin and you have a voltage divider
-    // routed to an analog pin to read the battery voltage, uncomment this block
-    // and assign the correct ADC channel and resistance values.
-    // Otherwise, delete it.
+    };    
 
     vbatt: vbatt {
   		compatible = "zmk,battery-voltage-divider";
