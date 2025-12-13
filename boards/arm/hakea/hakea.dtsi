@@ -22,6 +22,7 @@
         zmk,kscan = &kscan;
        // zmk,matrix_transform = &default_transform;
         zmk,physical-layout = &default_layout;
+        zephyr,display = &oled;
     };
 
     kscan: kscan {
