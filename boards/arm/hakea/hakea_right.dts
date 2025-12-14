@@ -22,3 +22,7 @@
                 , <&gpio0 23  GPIO_ACTIVE_HIGH>
                 ;
 };
+
+&right_encoder {
+    status = "okay";
+};
