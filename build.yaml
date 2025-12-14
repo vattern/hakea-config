@@ -34,4 +34,6 @@ include:
   - board: hakea_right
   - board: hakea_right
     shield: settings_reset
+    snippet: zmk-usb-logging
     artifact-name: settings_reset
+    cmake-args: -DCONFIG_LOG_PROCESS_THREAD_STARTUP_DELAY_MS=8000
