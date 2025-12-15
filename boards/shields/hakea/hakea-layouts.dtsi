@@ -77,6 +77,6 @@
                     ;
             };
         };
-&oled: ssd1306@3c {
+&oled {
         height = <64>;
     };
