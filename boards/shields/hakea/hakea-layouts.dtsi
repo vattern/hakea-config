@@ -79,4 +79,5 @@
         };
 &oled {
         height = <64>;
+        multiplex-ratio = <63>;
     };
