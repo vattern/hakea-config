@@ -66,7 +66,7 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5) RC(4,5) RC(4,6) RC(3,6) RC(3,7) 
         // If you have a GPIO routed to a status LED, set it here.
         // Otherwise, delete this block.
         blue_led: led_0 {
-            gpios = <&gpio0 0 GPIO_ACTIVE_HIGH>;
+            gpios = <&gpio1 11 GPIO_ACTIVE_HIGH>;
         };
     };    
 
@@ -99,6 +99,10 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5) RC(4,5) RC(4,6) RC(3,6) RC(3,7) 
                     sensors = <&left_encoder &right_encoder>;
                     triggers-per-rotation = <60>;
             };
+};
+&kscan0 {
+    debounce-press-ms = <8>;
+    debounce-release-ms = <8>;
 };
 
 &pinctrl {
