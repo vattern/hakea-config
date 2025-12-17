@@ -26,12 +26,6 @@ include:
     artifact-name: dongle
 
   - board: hakea_left
-    shield: hakea_esp_dongle
-    snippet: studio-rpc-usb-uart
-    #cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_CLOCK_CONTROL_NRF_K32SRC_RC=y -DCONFIG_ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_FETCHING=y
-    artifact-name: esp_dongle
-  
-  - board: hakea_left
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
     artifact-name: left_normal
