@@ -1,22 +1,17 @@
+Defaults: &defaults
+  vendor: tokas
+  revision:
+    format: major.minor.patch
+    default: 1.0.0
+    exact: true
+    revisions:
+      - name: 1.0.0
+  socs:
+    - name: nrf52840
+
 boards:
   - name: hakea_left
-    vendor: tokas
-    revision:
-      format: major.minor.patch
-      default: 1.0.0
-      exact: true
-      revisions:
-        - name: 1.0.0
-    socs:
-      - name: nrf52840
+    <<: *defaults
 
   - name: hakea_right
-    vendor: tokas
-    revision:
-      format: major.minor.patch
-      default: 1.0.0
-      exact: true
-      revisions:
-        - name: 1.0.0
-    socs:
-      - name: nrf52840
+    <<: *defaults
