@@ -2,7 +2,7 @@ board:
   name: hakea
   vendor: tokas
   revision:
-    format: 1.0.0
+    format: major.minor.patch
     default: 1.0.0
     exact: true
     revisions:
