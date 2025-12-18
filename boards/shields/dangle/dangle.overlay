@@ -15,12 +15,16 @@
     status = "disabled";
 };
 
+&uicr {
+        nfct-pins-as-gpios;
+};
+
 disp_spi: &spi3 {
    status = "okay";
    pinctrl-0 = <&spi3_default>;
 	pinctrl-1 = <&spi3_sleep>;
 	pinctrl-names = "default", "sleep";
-   cs-gpios = <&gpio0 9 GPIO_ACTIVE_LOW>;
+   cs-gpios = <&gpio1 6 GPIO_ACTIVE_LOW>;
 };
 / {
     chosen {
@@ -57,8 +61,8 @@ disp_spi: &spi3 {
     mipi_dbi_st7789v_raw_240x240 {
     		compatible = "zephyr,mipi-dbi-spi";
     		spi-dev = <&spi3>;
-    		dc-gpios = <&gpio0 12  GPIO_ACTIVE_HIGH>;
-    		reset-gpios = <&gpio1 6  GPIO_ACTIVE_LOW>;
+    		dc-gpios = <&gpio0 19  GPIO_ACTIVE_HIGH>;
+    		reset-gpios = <&gpio0 21  GPIO_ACTIVE_LOW>;
     		write-only;
     		#address-cells = <1>;
     		#size-cells = <0>;
