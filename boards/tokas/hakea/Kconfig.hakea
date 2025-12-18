@@ -1,7 +1,5 @@
 config BOARD_HAKEA_LEFT
-    bool "hakea left"
     SELECT SOC_NRF52840_QIAA
 
 config BOARD_HAKEA_RIGHT
-    bool "hakea right"
     SELECT SOC_NRF52840_QIAA
