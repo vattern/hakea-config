@@ -1,4 +1,4 @@
-board:
+boards:
   - name: hakea_left
     vendor: tokas
     revision:
