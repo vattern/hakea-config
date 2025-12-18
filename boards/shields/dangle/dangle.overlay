@@ -7,20 +7,22 @@
     transform = <&default_transform>;
 };
 
-aliases {
-		pwm-0 = &ledc0;
-		pwm-led0 = &pwm_led_blue;
-	};
 
-	pwmleds {
-		compatible = "pwm-leds";
-
-		pwm_led_blue: pwm_led_gpio0_22 {
-			label = "PWM LED0";
-			pwms = <&ledc0 0 1000 PWM_POLARITY_NORMAL>;
-		};
-	};
 / {
+    aliases {
+        pwm-0 = &ledc0;
+        pwm-led0 = &pwm_led_blue;
+    };
+
+    pwmleds {
+        compatible = "pwm-leds";
+
+        pwm_led_blue: pwm_led_gpio0_22 {
+            label = "PWM LED0";
+            pwms = <&ledc0 0 1000 PWM_POLARITY_NORMAL>;
+        };
+    };
+
     chosen {
         zmk,kscan = &mock_kscan;
         zmk,physical-layout = &default_layout;
