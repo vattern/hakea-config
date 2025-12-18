@@ -1,0 +1,11 @@
+board:
+  name: hakea
+  vendor: tokas
+  revision:
+    format: 1.0.0
+    default: 1.0.0
+    exact: true
+    revisions:
+      - name: 1.0.0
+  socs:
+    - name: nrf52840
