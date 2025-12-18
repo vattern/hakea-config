@@ -27,6 +27,7 @@ include:
 
   - board: hakea_left
     shield: dangle
+    snippet: zmk-usb-logging
     #cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_CLOCK_CONTROL_NRF_K32SRC_RC=y -DCONFIG_ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_FETCHING=y
     artifact-name: dangle
 
