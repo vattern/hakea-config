@@ -1,8 +1,8 @@
-if SHIELD_HAKEA_DONGLE
+if SHIELD_DINGLE
 
 # Max 16 characters in keyboard name
 config ZMK_KEYBOARD_NAME
-    default "Hakea"
+    default "Dingle"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
