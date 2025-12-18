@@ -39,7 +39,7 @@ include:
 #    cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
 #    artifact-name: left_dongle
 
-  - board: hakea_right
+#  - board: hakea_right
 #
 #  - board: hakea_right
 #    shield: settings_reset
