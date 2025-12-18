@@ -3,7 +3,6 @@
 // instructions.
 
 #include "hakea.dtsi"
-#include "hakea_right-pinctrl.dtsi"
 
 &default_transform {
     // Set this to the number of columns on the left side.
