@@ -6,9 +6,7 @@
 &default_layout {
     transform = <&default_transform>;
 };
-&oled {
-    status = "disabled";
-};
+
 aliases {
 		pwm-0 = &ledc0;
 		pwm-led0 = &pwm_led_blue;
