@@ -1,8 +1,8 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include <zephyr/dt-bindings/mipi_dbi/mipi_dbi.h>
 
-#import "dingle-layouts.dtsi"
-#import "dingle_pinctrl.dtsi"
+#import "dangle-layouts.dtsi"
+#import "dangle_pinctrl.dtsi"
 
 &default_layout {
     transform = <&default_transform>;
