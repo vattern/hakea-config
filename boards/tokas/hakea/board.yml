@@ -1,7 +1,5 @@
-
-
 boards:
-  - &board_common
+  - name: hakea_left
     vendor: tokas
     revision:
       format: major.minor.patch
@@ -11,7 +9,3 @@ boards:
         - name: 1.0.0
     socs:
       - name: nrf52840
-    name: hakea_left
-
-  - <<: *board_common
-    name: hakea_right
