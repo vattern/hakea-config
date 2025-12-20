@@ -9,19 +9,6 @@
 
 
 / {
-    aliases {
-        pwm-0 = &ledc0;
-        pwm-led0 = &pwm_led_blue;
-    };
-
-    pwmleds {
-        compatible = "pwm-leds";
-
-        pwm_led_blue: pwm_led_gpio0_22 {
-            label = "PWM LED0";
-            pwms = <&ledc0 0 1000 PWM_POLARITY_NORMAL>;
-        };
-    };
 
     chosen {
         zmk,kscan = &mock_kscan;
@@ -89,18 +76,5 @@
             mipi-mode = "MIPI_DBI_MODE_SPI_4WIRE";
         };
     };
-};
-
-&ledc0 {
-	pinctrl-0 = <&ledc0_default>;
-	pinctrl-names = "default";
-	status = "okay";
-	#address-cells = <1>;
-	#size-cells = <0>;
-
-	channel0@0 {
-		reg = <0x0>;
-		timer = <0>;
-	};
 };
 
