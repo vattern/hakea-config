@@ -26,7 +26,7 @@
     chosen {
         zmk,kscan = &mock_kscan;
         zmk,physical-layout = &default_layout;
-        zephyr,display = &st7789v_st7789v_raw_240x240;
+        zephyr,display = &st7789v;
     };
 
     mock_kscan: mock_kscan_0 {
@@ -54,7 +54,7 @@
             >;
         };
 
-    mipi_dbi_st7789v_raw_240x240 {
+    mipi_dbi_st7789v {
         compatible = "zephyr,mipi-dbi-spi";
         spi-dev = <&spi2>;
         dc-gpios = <&gpio0 2  GPIO_ACTIVE_HIGH>;
@@ -63,7 +63,7 @@
         #address-cells = <1>;
         #size-cells = <0>;
 
-        st7789v_st7789v_raw_240x240: st7789v@0 {
+        st7789v: st7789v@0 {
             compatible = "sitronix,st7789v";
             mipi-max-frequency = <20000000>;
             reg = <0>;
@@ -89,31 +89,6 @@
             mipi-mode = "MIPI_DBI_MODE_SPI_4WIRE";
         };
     };
-};
-
-
-&pinctrl {
-       spim2_default: spim2_default {
-		group1 {
-			pinmux = <SPIM2_MISO_GPIO5>,
-				 <SPIM2_SCLK_GPIO18>,
-				 <SPIM2_CSEL_GPIO14>;
-		};
-
-		group2 {
-			pinmux = <SPIM2_MOSI_GPIO23>;
-			output-low;
-		};
-
-	};
-
-	ledc0_default: ledc0_default {
-		group1 {
-			pinmux = <LEDC_CH0_GPIO22>;
-			output-enable;
-		};
-	};
-
 };
 
 &ledc0 {
