@@ -24,11 +24,11 @@ include:
     snippet: studio-rpc-usb-uart
     #cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_CLOCK_CONTROL_NRF_K32SRC_RC=y -DCONFIG_ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_FETCHING=y
     artifact-name: dingle
-
-  - board: esp32_devkitc_wroom/esp32/procpu
-    shield: dangle
-    #cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_CLOCK_CONTROL_NRF_K32SRC_RC=y -DCONFIG_ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_FETCHING=y
-    artifact-name: dangle
+#
+#  - board: esp32_devkitc_wroom/esp32/procpu
+#    shield: dangle
+#    #cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_CLOCK_CONTROL_NRF_K32SRC_RC=y -DCONFIG_ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_FETCHING=y
+#    artifact-name: dangle
 
 #
 #  - board: esp32_devkitc_wroom
