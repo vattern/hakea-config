@@ -43,5 +43,5 @@
         height = <64>;
         multiplex-ratio = <63>;
       /delete-property/  com-sequential;
-      /delete-property/  inversion-on;
+
     };
