@@ -1,16 +1,16 @@
 &pinctrl {
-       i2c0_default: i2c0_default {
-               group1 {
-                       psels = <NRF_PSEL(TWIM_SDA, 0, 9)>,
-                               <NRF_PSEL(TWIM_SCL, 0, 7)>; //19 for the onboard
-               };
-       };
+        i2c0_default: i2c0_default {
+              group1 {
+                      psels = <NRF_PSEL(TWIM_SDA, 0, 21)>, // 21 on the left side
+                              <NRF_PSEL(TWIM_SCL, 0, 23)>; //19 for the onboard
+              };
+           };
 
-       i2c0_sleep: i2c0_sleep {
-               group1 {
-                       psels = <NRF_PSEL(TWIM_SDA, 0, 9)>,
-                               <NRF_PSEL(TWIM_SCL, 0, 7)>; //19 for the onboard
-                       low-power-enable;
-               };
-       };
+           i2c0_sleep: i2c0_sleep {
+              group1 {
+                      psels = <NRF_PSEL(TWIM_SDA, 0, 21)>, // 21 on the left side
+                              <NRF_PSEL(TWIM_SCL, 0, 23)>; //19 for the onboard
+                      low-power-enable;
+              };
+           };
 };
