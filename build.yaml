@@ -25,6 +25,10 @@ include:
     #cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_CLOCK_CONTROL_NRF_K32SRC_RC=y -DCONFIG_ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_FETCHING=y
     artifact-name: dongle
 
+  - board: seeeduino_xiao_ble
+    shield: hakea_dongle prospector_adapter
+    artifact-name: prospector
+
 #
 #  - board: esp32_devkitc_wroom
 #    shield: st7789v_raw_240x240
