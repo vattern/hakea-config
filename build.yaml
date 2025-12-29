@@ -20,20 +20,21 @@
 ---
 include:
   - board: hakea_left
-    shield: hakea_dongle dongle_display
+    shield: scylla_left_dongle dongle_display
     snippet: studio-rpc-usb-uart
     #cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_CLOCK_CONTROL_NRF_K32SRC_RC=y -DCONFIG_ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_FETCHING=y
-    artifact-name: dongle
+    artifact-name: scylla_left_dongle
+
+  - board: hakea_left
+    shield: scylla_right_dongle dongle_display
+    snippet: studio-rpc-usb-uart
+    #cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_CLOCK_CONTROL_NRF_K32SRC_RC=y -DCONFIG_ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_FETCHING=y
+    artifact-name: scylla_right_dongle
 
   - board: seeeduino_xiao_ble
     shield: hakea_prospector prospector_adapter
     artifact-name: prospector
 
-#
-#  - board: esp32_devkitc_wroom
-#    shield: st7789v_raw_240x240
-#    artifact-name: dingle
-#
   - board: hakea_left
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
@@ -42,12 +43,6 @@ include:
   - board: hakea_left
     cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
     artifact-name: left_dongle
-
-  - board: hakea_left
-    shield: scylla_right_dongle dongle_display
-    snippet: studio-rpc-usb-uart
-    #cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_CLOCK_CONTROL_NRF_K32SRC_RC=y -DCONFIG_ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_FETCHING=y
-    artifact-name: scylla_right_dongle
 
   - board: hakea_right
 
