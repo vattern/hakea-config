@@ -43,6 +43,12 @@ include:
     cmake-args: -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
     artifact-name: left_dongle
 
+  - board: hakea_left
+    shield: scylla_right_dongle dongle_display
+    snippet: studio-rpc-usb-uart
+    #cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_CLOCK_CONTROL_NRF_K32SRC_RC=y -DCONFIG_ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_FETCHING=y
+    artifact-name: scylla_right_dongle
+
   - board: hakea_right
 
   - board: hakea_right
