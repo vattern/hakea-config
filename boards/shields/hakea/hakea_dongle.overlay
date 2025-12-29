@@ -38,4 +38,9 @@
         };
 };
 
-
+&oled {
+        compatible = "solomon,ssd1306fb";
+        height = <64>;
+        multiplex-ratio = <63>;
+      /delete-property/  com-sequential;
+    };
