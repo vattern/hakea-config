@@ -1,4 +1,4 @@
-if SHIELD_HAKEA_DONGLE
+if SHIELD_HAKEA_PROSPECTOR
 
 # Max 16 characters in keyboard name
 config ZMK_KEYBOARD_NAME
@@ -23,21 +23,5 @@ config BT_MAX_CONN
 config BT_MAX_PAIRED
     default 6
 
-if LVGL
-
-config LV_Z_VDB_SIZE
-    default 64
-
-config LV_DPI_DEF
-    default 148
-
-config LV_Z_BITS_PER_PIXEL
-    default 1
-
-choice LV_COLOR_DEPTH
-    default LV_COLOR_DEPTH_1
-endchoice
-
-endif
 
 endif
