@@ -35,6 +35,10 @@ include:
     shield: hakea_prospector prospector_adapter
     artifact-name: prospector
 
+  - board: seeeduino_xiao_ble
+    shield: hakea_prospector dongle_screen
+    artifact-name: yads
+
   - board: hakea_left
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
